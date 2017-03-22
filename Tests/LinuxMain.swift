@@ -1,6 +1,6 @@
 //
 //  LinuxMain.swift
-//  redis-client-kitura
+//  KituraRedisClient
 //
 //  Created by Valerio Mazzeo on 21/03/2017.
 //  Copyright © 2017 VMLabs Limited. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  KituraRedisClient.swift
-//  redis-client-kitura
+//  KituraRedisClient
 //
 //  Created by Valerio Mazzeo on 21/03/2017.
 //  Copyright © 2017 VMLabs Limited. All rights reserved.
@@ -21,7 +21,7 @@
 
 import Foundation
 import Dispatch
-import Reswifq
+import RedisClient
 import SwiftRedis
 
 extension Redis: RedisClient {

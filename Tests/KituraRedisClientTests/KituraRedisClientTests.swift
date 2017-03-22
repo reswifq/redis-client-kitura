@@ -1,6 +1,6 @@
 //
 //  KituraRedisClientTests.swift
-//  redis-client-kitura
+//  KituraRedisClient
 //
 //  Created by Valerio Mazzeo on 21/03/2017.
 //  Copyright © 2017 VMLabs Limited. All rights reserved.
@@ -22,7 +22,7 @@
 import XCTest
 import Foundation
 import SwiftRedis
-import Reswifq
+import RedisClient
 @testable import KituraRedisClient
 
 class KituraRedisClientTests: XCTestCase {

@@ -1,6 +1,6 @@
 //
 //  Package.swift
-//  redis-client-kitura
+//  KituraRedisClient
 //
 //  Created by Valerio Mazzeo on 21/03/2017.
 //  Copyright © 2017 VMLabs Limited. All rights reserved.
@@ -27,7 +27,7 @@ let package = Package(
 		Target(name: "KituraRedisClient")
 	],
 	dependencies: [
-		.Package(url: "https://github.com/reswifq/reswifq.git", majorVersion: 1),
+		.Package(url: "https://github.com/reswifq/redis-client.git", majorVersion: 1),
 		.Package(url: "https://github.com/IBM-Swift/Kitura-redis.git", majorVersion: 1, minor: 6)
 	]
 )
