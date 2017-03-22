@@ -22,7 +22,7 @@ let package = Package(
 )
 ```
 
-_**Note:** This will also import [Reswifq](https://github.com/reswifq/reswifq) and some [IBM-Swift/Kitura-redis](https://github.com/IBM-Swift/Kitura-redis) related packages into your project._
+_**Note:** This will also import some [IBM-Swift/Kitura-redis](https://github.com/IBM-Swift/Kitura-redis) related packages into your project._
 
 #### Create a client and a queue:
 
