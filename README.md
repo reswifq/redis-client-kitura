@@ -1,6 +1,6 @@
 # KituraRedisClient
 
-![Swift](https://img.shields.io/badge/swift-3.0.2-brightgreen.svg)
+![Swift](https://img.shields.io/badge/swift-3.1-brightgreen.svg)
 [![Build Status](https://api.travis-ci.org/reswifq/redis-client-kitura.svg?branch=master)](https://travis-ci.org/reswifq/redis-client-kitura)
 [![Code Coverage](https://codecov.io/gh/reswifq/redis-client-kitura/branch/master/graph/badge.svg)](https://codecov.io/gh/reswifq/redis-client-kitura)
 
