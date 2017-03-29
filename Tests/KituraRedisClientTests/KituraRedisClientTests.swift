@@ -35,7 +35,7 @@ class KituraRedisClientTests: XCTestCase {
         ("testInitWithResponseNil", testInitWithResponseNil),
         ("testInitWithResponseStatus", testInitWithResponseStatus),
         ("testInitWithResponseStatusUnknown", testInitWithResponseStatusUnknown),
-        ("testInitWithResponseString", testInitWithResponseString),
+        ("testInitWithResponseString", testInitWithResponseString)
     ]
 
     func testExecute() throws {
