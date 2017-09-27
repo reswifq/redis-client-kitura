@@ -1,6 +1,6 @@
 # KituraRedisClient
 
-![Swift](https://img.shields.io/badge/swift-3.1-brightgreen.svg)
+![Swift](https://img.shields.io/badge/swift-4.0-brightgreen.svg)
 [![Build Status](https://api.travis-ci.org/reswifq/redis-client-kitura.svg?branch=master)](https://travis-ci.org/reswifq/redis-client-kitura)
 [![Code Coverage](https://codecov.io/gh/reswifq/redis-client-kitura/branch/master/graph/badge.svg)](https://codecov.io/gh/reswifq/redis-client-kitura)
 
@@ -15,9 +15,14 @@ import PackageDescription
 
 let package = Package(
     name: "YourProject",
-    targets: [],
+    products: [
+      .executable(name: "YourProject", targets: ["YourProject"])
+    ],
     dependencies: [
-        .Package(url: "https://github.com/reswifq/redis-client-kitura", majorVersion: 1)
+        .package(url: "https://github.com/reswifq/redis-client-kitura", .upToNextMajor(from: "1.2.0"))
+    ],
+    targets: [
+      .target(name: "YourProject", dependencies: ["KituraRedisClient"])
     ]
 )
 ```

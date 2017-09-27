@@ -1,3 +1,5 @@
+// swift-tools-version:4.0
+
 //
 //  Package.swift
 //  KituraRedisClient
@@ -23,11 +25,15 @@ import PackageDescription
 
 let package = Package(
 	name: "KituraRedisClient",
-	targets: [
-		Target(name: "KituraRedisClient")
+	products: [
+		.library(name: "KituraRedisClient", targets: ["KituraRedisClient"])
 	],
 	dependencies: [
-		.Package(url: "https://github.com/reswifq/redis-client.git", majorVersion: 1),
-		.Package(url: "https://github.com/IBM-Swift/Kitura-redis.git", majorVersion: 1, minor: 7)
+		.package(url: "https://github.com/reswifq/redis-client.git", .upToNextMajor(from: "1.2.0")),
+		.package(url: "https://github.com/IBM-Swift/Kitura-redis.git", .upToNextMajor(from: "1.8.0"))
+	],
+	targets: [
+		.target(name: "KituraRedisClient", dependencies: ["RedisClient", "SwiftRedis"]),
+		.testTarget(name: "KituraRedisClientTests", dependencies: ["KituraRedisClient"])
 	]
 )
