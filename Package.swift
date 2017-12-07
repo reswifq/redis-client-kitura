@@ -29,8 +29,8 @@ let package = Package(
 		.library(name: "KituraRedisClient", targets: ["KituraRedisClient"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/reswifq/redis-client.git", .upToNextMajor(from: "1.2.0")),
-		.package(url: "https://github.com/IBM-Swift/Kitura-redis.git", .upToNextMajor(from: "1.8.0"))
+		.package(url: "https://github.com/reswifq/redis-client.git", .upToNextMajor(from: "1.3.0")),
+		.package(url: "https://github.com/IBM-Swift/Kitura-redis.git", .upToNextMajor(from: "2.0.0"))
 	],
 	targets: [
 		.target(name: "KituraRedisClient", dependencies: ["RedisClient", "SwiftRedis"]),
